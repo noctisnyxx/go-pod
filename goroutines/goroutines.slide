@@ -1,0 +1,21 @@
+Goroutines
+Goroutines are suck
+
+Dinar
+Nov 2024
+dinar.hadiyanto@outlook.com
+https://github.com/noctisnyxx
+@rahmatdinar
+
+* Independent process
+Let's say we want to run 5 independent processes. As a dummy, we are gonna make them runs with a sequential manner
+
+.play -edit codes/example#1-basic/demo.go /^func main/,/^}/
+
+* Let's getting started
+.play -edit codes/example#2-gettingstarted/demo.go /^func main/,/^}/
+
+* Working with WaitGroup
+While you are expecting to put your goroutine out of the main routine, you need to pay attention to the main routine to not finishing it's operation if the other routines is still working! So, we need the WaitGroup and defer command
+.code codes/example#3-waitgroup/demo.go /^func processA/,/^}
+.code codes/example#3-waitgroup/demo.go /^func main/,/^}
